@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">hello!</h1>
+    <button class="btn">click</button>
+
+    <script>
+let stringsArheadray = ["string1", "string2", "string3", "string4", "string5"];
+let arrayList =document.querySelector('.head');
+let btn = document.querySelector('.btn')
+
+let currentIndex = 0;
+btn.addEventListener('click',()=>{
+
+   if(currentIndex < stringsArheadray.length){
+    arrayList.textContent=stringsArheadray[currentIndex++]
+   }else{
+    currentIndex = 0
+   }
+
+    
+
+})
+    </script>
+</body>
+</html>
